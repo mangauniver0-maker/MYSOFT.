@@ -94,17 +94,18 @@ button:hover{
     padding: 0 24px;
 }
 
-/* Navigation la bar au dessus au se trouve MYSOFT et les different boutont acceuil , produit, contact */
+/* Navigation la bar au dessus au se trouve Tsoft et les different boutont acceuil , produit, contact */
 #navbar {
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
-    background: transparent;
-    backdrop-filter: blur(1px);
-    -webkit-backdrop-filter: blur(1px);
-    /* border-bottom: 1px solid black; */
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(15, 8, 75, 0.1);
     z-index: 1000;
+    box-shadow: 0 2px 8px rgba(15, 8, 75, 0.05);
 }
 
 .nav-container {
@@ -119,63 +120,89 @@ button:hover{
 
 .nav-logo a {
     font-size: 24px;
-    font-weight: 600;
-    /* font-family: var(--nunito); */
+    font-weight: 700;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: var(--color-primary);
     text-decoration: none;
     letter-spacing: -0.02em;
+    transition: var(--transition);
+}
+
+.nav-logo a:hover {
+    color: var(--color-secondary);
 }
 
 .nav-menu {
     display: flex;
-    gap: 32px;
+    gap: 40px;
+    align-items: center;
 }
 
 .nav-link {
     position: relative;
-    color: var(--color-border);
+    color: var(--color-primary);
     text-decoration: none;
     transition: var(--transition);
     font-size: 15px;
-}
-.nav-link::before{
-    content: "";
-    position: absolute;
-    top: 25px;
-    width: 0;
-    height: 8%;
-    background-color: var(--color-secondary);
-    transition: var(--transition);
+    font-weight: 500;
+    padding: 8px 0;
 }
 
-.nav-link:hover,
-.nav-link:hover::before{
+.nav-link::after {
+    content: "";
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background: linear-gradient(90deg, var(--color-secondary), var(--color-surface));
+    border-radius: 2px;
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover {
     color: var(--color-secondary);
+}
+
+.nav-link:hover::after {
     width: 100%;
 }
 
-.close{
+.close {
     display: none;
-    color: var(--color-surface);
-    font-size: 20px;
+    color: var(--color-primary);
+    font-size: 28px;
     cursor: pointer;
+    padding: 0;
+    background: none;
+    border: none;
+    transition: var(--transition);
+}
+
+.close:hover {
+    color: var(--color-secondary);
 }
 
 .mobile-menu-btn {
     display: none;
     flex-direction: column;
-    gap: 5px;
+    gap: 6px;
     background: none;
     border: none;
     cursor: pointer;
-    padding: 8px;
+    padding: 8px 4px;
+    transition: var(--transition);
+}
+
+.mobile-menu-btn:hover {
+    opacity: 0.7;
 }
 
 .mobile-menu-btn span {
     width: 24px;
-    height: 2px;
+    height: 2.5px;
     background: var(--color-primary);
+    border-radius: 2px;
     transition: var(--transition);
 }
 
@@ -411,6 +438,10 @@ h1,h2{
     animation: fade-in linear forwards;
     animation-timeline: view();
     animation-range: 250px 500px;
+}
+
+.tech img{
+    width: 100%;
 }
 
 @keyframes fade-in {
@@ -649,19 +680,21 @@ h1,h2{
     margin-inline: 50px;
 }
     .nav-menu {
-        /* display: none; */
         position: absolute;
-        top: 0;
+        top: 64px;
         right: 0;
-        height: 656px;
-        width: 300px;
-        background: var(--color-border);
+        height: calc(100vh - 64px);
+        width: 100%;
+        max-width: 320px;
+        background: linear-gradient(135deg, var(--color-primary) 0%, #1a1261 100%);
         flex-direction: column;
-        padding: 24px;
-        padding-block-start: 80px;
-        gap: 16px;
-        translate: 900px 0; 
-        transition: all .5s ease-in-out;
+        align-items: flex-start;
+        padding: 32px 24px;
+        gap: 12px;
+        translate: 100% 0; 
+        transition: translate 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        overflow-y: auto;
+        box-shadow: -4px 0 12px rgba(15, 8, 75, 0.15);
     }
 
     .nav-menu.active {
@@ -669,52 +702,50 @@ h1,h2{
     }
 
     .nav-link {
-        padding: 12px 16px;
-        border-radius: 8px;
+        color: white;
+        padding: 14px 16px;
+        border-radius: 12px;
+        font-weight: 500;
+        transition: var(--transition);
     }
 
     .nav-link:hover,
     .nav-link.active {
-        background: var(--color-surface);
+        background: rgba(255, 255, 255, 0.15);
+        color: var(--light);
     }
 
-    .nav-link::before{
-    content: "";
-    position: absolute;
-    top: 23px;
-    right: 10px;
-    width: 5px;
-    height: 5px;
-    border-radius: 50%;
-    background-color: var(--color-secondary);
-    transition: var(--transition);
-    z-index: 1;
-    }
-    
-    .nav-link:hover::before{
-        scale: 2;
-        width: 50px;
-        height: 50px;
+    .nav-link::after {
+        display: none;
     }
 
-    .close{
+    .close {
         display: flex;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        color: white;
+        font-size: 32px;
+        transition: var(--transition);
+        margin-bottom: 10px;
+    }
+
+    .close:hover {
+        color: var(--light);
+        transform: scale(1.1);
     }
 
     .mobile-menu-btn {
         display: flex;
+        font-size: 20px;
     }
 
-    .mobile-menu-btn.active span:nth-child(1) {
-        transform: rotate(45deg) translate(7px, 7px);
+    .mobile-menu-btn span {
+        background: var(--color-primary);
     }
 
-    .mobile-menu-btn.active span:nth-child(2) {
-        opacity: 0;
-    }
-
-    .mobile-menu-btn.active span:nth-child(3) {
-        transform: rotate(-45deg) translate(7px, -7px);
+    .mobile-menu-btn.active {
+        display: none;
     }
 
     .hero h1 {
