@@ -4,9 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> MYSoft - Innovation et Excellence Technologique</title>
+    <title>Mysoft - Innovation et Excellence Technologique</title>
     <!-- chemin relatif pour fonctionner depuis le dossier du projet -->
     <link rel="stylesheet" href="main.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     
 </head>
@@ -15,7 +16,7 @@
     <nav id="navbar">
         <div class="nav-container">
             <div class="nav-logo">
-                <a href="#home">MYSoft</a>
+                <a href="#home">Mysoft</a>
             </div>
             <div class="nav-menu" id="navMenu">
                 <div class="close">
@@ -23,16 +24,15 @@
                 </div>
                 <a href="#" class="nav-link active">Accueil</a>
                 <a href="#about" class="nav-link active">About</a>
-                <a href="#products" class="nav-link">Produits</a>
+                <a href="#products" class="nav-link active">Produits</a>
                 <a href="#contact" class="nav-link active">Contact</a>
                 <span>|</span>
-                <a href="equipe.html" class="nav-link">Equipe</a>
-                <a href="historique.html" class="nav-link">Historique</a>
+                <a href="historique/historique.html" class="nav-link active">Historique</a>
+                <a href="equipe/equipe.html" class="nav-link active">Equipe</a>
+                <a href="portfolio/portfolio.html" class="nav-link active">Portfolio</a>
             </div>
             <button class="mobile-menu-btn" id="mobileMenuBtn" type="button" aria-label="Ouvrir le menu">
-                <span></span>
-                <span></span>
-                <span></span>
+                <i class="fa-solid fa-bars"></i>
             </button>
         </div>
     </nav>
@@ -44,8 +44,8 @@
             <section class="hero">
                 <div class="container">
                     <div class="hero-content">
-                        <h1 class="container_title">MYSoft Développement web et mobile en RDC</h1>
-                        <p class="hero-subtitle">MYSoft transforme vos idées en solutions logicielles performantes </p>
+                    <h1 class="container_title">Mysoft Développement web et mobile en RDC</h1>
+                    <p class="hero-subtitle">Mysoft transforme vos idées en solutions logicielles performantes </p>
                         <div class="hero-buttons">
                             <button class="btn btn-primary" type="button">
                                 <a href="#products">Découvrir nos solutions</a>
@@ -60,29 +60,36 @@
                         <!-- <img src="img/undraw_circled-arrow.svg" alt="">
                         <img src="img/undraw_fun-arrow.svg" alt="">
                         <img src="img/undraw_chat.svg" alt=""> -->
-                       
+                        <img src="img/undraw_party-streamer.svg" alt="">
                     </div>
                 </div>
             </section>
     
             <!-- Image Section -->
-           
+            <section class="image-section">
+                <div class="container">
+                    <div class="image-wrapper">
+                        <img src="img/home.png
+                            " alt="Développement logiciel">
+                    </div>
+                </div>
+            </section>
     
             <!-- Features Section -->
             <section class="features about" id="about">
                 <div class="container">
                     <div class="section-header">
-                        <h2>A propos de MYSoft</h2>
+                        <h2>A propos de TSoft</h2>
                         <div>
-                            <p> MYSoft est une startup Creer par deux Etudiant Congolais GRADI TAEMBI et NITE <br>
-                                MYSoft développe des sites web, des logiciels d'entreprise , des 
+                            <p> T Soft est une startup Creer par deux Etudiant Congolais GRADI TAEMBI et NITE <br>
+                                TSOft développe des sites web, des logiciels d'entreprise , des 
                                 applications mobiles et solutions numériques modernes pour entreprises et particuliers en
                                 RDC.
-                                MYSoft est neé du desir de Gradi Taembi, de creer une star up congolaise
+                                TSoft est neé du desir de Gradi Taembi, de creer une star up congolaise
                                 specialisé sur les nouvelles technologies et visant l'innovation technologique dans un pays
                                 où la technologie ne pas au premier rang , par exemple: le service publique congolais n'est
                                 toujours
-                                pas numériques donc pas des sites web ou des logiciels facilitants ces services pour les communes et autre...; telle est donc la mission de MYSOFT ,
+                                pas numériques donc pas des sites web ou des logiciels facilitants ces services pour les communes et autre...; telle est donc la mission de Tsoft ,
                                 en Numerisant les services publique, les alertes et plus encore , nous aideront notre
                                 communauté
                                 en innovant avec la Technologie
@@ -135,7 +142,7 @@
                 <div class="container">
                     <div class="cta-content">
                         <h2>Prêt à transformer votre entreprise ?</h2>
-                        <p>Discutons de votre projet et découvrez comment MYSoft peut vous accompagner</p>
+                        <p>Discutons de votre projet et découvrez comment Mysoft peut vous accompagner</p>
                         <button class="btn btn-white" type="button" onclick="navigateTo('contact')">
                             <a href="#contact">Démarrer maintenant</a>
                             
@@ -288,7 +295,7 @@
                         <div class="tech-item">Python</div>
                         <div class="tech-item">JavaScript</div>
                         <div class="tech-item">CSS</div>
-                        <div class="tech-item">Supabase</div>
+                        <div class="tech-item">Convex</div>
                         <div class="tech-item">Gsap</div>
                         <div class="tech-item">Shadcn.ui</div>
                         <div class="tech-item">tailwind</div>
@@ -335,7 +342,7 @@
                                     </div>
                                     <div>
                                         <h3>Email</h3>
-                                        <p>contactmysoft@mysft.site</p>
+                                        <p>contact.mysoft@mysft.site</p>
                                     </div>
                                 </div>
                                 <div class="contact-item">
@@ -367,7 +374,9 @@
                                 </div>
                             </div>
     
-                            
+                            <div class="contact-image">
+                                <img src="img/contact.png" alt=" contact">
+                            </div>
                         </div>
     
                         <!-- Contact Form -->
@@ -423,7 +432,7 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2026  MYSOFT. Tous droits réservés.</p>
+            <p>&copy; 2026 Mysoft. Tous droits réservés.</p>
         </div>
     </footer>
 
