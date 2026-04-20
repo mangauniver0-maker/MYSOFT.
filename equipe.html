@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MYSOFT</title>
+    <title>Tsoft</title>
     <link rel="stylesheet" href="equipe.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
@@ -12,7 +12,7 @@
     <nav id="navbar">
         <div class="nav-container">
             <div class="nav-logo">
-                <a href="/index.html">MYSOFT</a>
+                <a href="/index.html">Mysoft</a>
             </div>
             <div class="nav-menu" id="navMenu">
                 <div class="close">
@@ -22,12 +22,12 @@
                 <a href="#role" class="nav-link active">Department&roles</a>
                 <a href="#contact" class="nav-link active">Contact</a>
                 <span>|</span>
-                
+                <a href="/historique/historique.html" class="nav-link active">Historique</a>
+                <a href="equipe.html" class="nav-link active">Equipe</a>
+                <a href="/portfolio/portfolio.html" class="nav-link active">Portfolio</a>
             </div>
             <button class="mobile-menu-btn" id="mobileMenuBtn" type="button" aria-label="Ouvrir le menu">
-                <span></span>
-                <span></span>
-                <span></span>
+                <i class="fa-solid fa-bars"></i>
             </button>
         </div>
     </nav>
@@ -36,33 +36,40 @@
 
         <section class="container">
 
-            <h1 class="hero_title container_title">Founder & Co-founder</h1><br>
+            <h1>Meet the team</h1>
+
+            <div class="portfolio"></div>
+
+            <!-- <h1 class="hero_title container_title">Founder & Co-founder</h1><br> -->
 
             <div class="equipe">
 
                 <div>
+                    <!-- <img src="../worker/nite.png" alt="nite"> -->
                     <span>
                         <h1>Gradi </h1><br>
-                        <p class="skills">-- founder of MYSOFT -- Entrepreneur -- Python Developper</p><br>
+                        <p class="skills">-- founder of Mysoft -- Entrepreneur -- Python Developper</p><br>
                     </span>
                 </div>
 
                 <div>
+                    <!-- <img src="../worker/nite.png" alt="nite"> -->
                     <span>
                         <h1>Nite </h1><br>
-                        <p class="skills">-- Co-founder of MYSOFT -- Entrepreneur -- Fullstack Developper -- Designer --</p><br>
+                        <p class="skills">-- Co-founder of Mysoft -- Entrepreneur -- Fullstack Developper -- Designer --</p><br>
                     </span>
                 </div>  
 
             </div>
             <br><br><br>
 
-            <h1 class="container_title">Associés</h1><br>
+            <!-- <h1 class="container_title">Associés</h1><br> -->
 
             <div class="associe">
 
                 <div class="equipe">
                     <div>
+                        <!-- <img src="../worker/julio.jpg" alt="nite"> -->
                         <span>
                             <h1>Julio </h1><br>
                             <p class="skills">-- Web developper -- Python Developper -- Backend</p><br>
@@ -70,6 +77,7 @@
                     </div>
 
                     <div>
+                        <!-- <img src="../worker/nite.png" alt="nite"> -->
                         <span>
                             <h1>David </h1><br>
                             <p class="skills">-- Security web developper -- Network -- Hacking --</p><br>
@@ -79,6 +87,7 @@
 
                 <div class="equipe">
                     <div>
+                        <!-- <img src="../worker/prune.png" alt="nite"> -->
                         <span>
                             <h1>Prune </h1><br>
                             <p class="skills">-- UI/UX Designer -- Archetiture designer --</p><br>
@@ -86,6 +95,7 @@
                     </div>  
 
                     <div>
+                        <!-- <img src="../worker/nite.png" alt="nite"> -->
                         <span>
                             <h1>Eliakim </h1><br>
                             <p class="skills">-- Marketing manager -- Communication -- Externals relations --</p><br>
@@ -95,6 +105,7 @@
 
                 <div class="equipe">
                     <div>
+                        <!-- <img src="../worker/josue.jpg" alt="nite"> -->
                         <span>
                             <h1>Josué </h1><br>
                             <p class="skills">-- Web developper -- Python developper --</p><br>
@@ -102,6 +113,7 @@
                     </div> 
 
                     <div>
+                        <!-- <img src="../worker/merdi.jpg" alt="nite"> -->
                         <span>
                             <h1>Merdi </h1><br>
                             <p class="skills">-- Videast -- Marketing management -- Designer --</p><br>
@@ -111,12 +123,12 @@
                 
                 <div class="equipe">
                     <div>
+                        <!-- <img src="../worker/ndaie.png" alt="nite"> -->
                         <span>
                             <h1>Ndaie </h1><br>
-                            <p class="skills">-- Frontend developper --</p><br>
+                            <p class="skills">-- Frontend developper -- Python developper --</p><br>
                         </span>
                     </div>  
-                
 
                     <!-- <div>
                         <img src="../worker/nite.png" alt="nite">
@@ -126,21 +138,6 @@
                         </span>
                     </div>   -->
                 </div>
-                <div class="equipe">
-                    <div>
-                        <span>
-                            <h1>Samuella</h1><br>
-                            <p class="skills">-- Communication --</p><br>
-
-                        </span>
-                     <div>
-                            <h1>Stéphane</h1><br>
-                            <p class="skills">-- Backend develloper--</p><br>
-                        </span>
-                     </div>
-
-                    </div>
-                </div>
 
             </div>
 
@@ -148,10 +145,14 @@
 
         <section class="role" id="role">
             <h1>Nos départements</h1><br>
-            <p>MYSOFT possède quatre départements qui travail en parfaite interaction pour 
+            <p>Mysoft possède quatre départements qui travail en parfaite interaction pour 
                 produire des innovations.
             </p><br>
-            <div class="portfolio"></div>
+            <!-- <div class="portfolio"></div> -->
+
+            <div class="tech">
+                <img src="../img/tech.avif" alt="tech">
+            </div>
 
             <div>
                 <ul>
@@ -199,7 +200,7 @@
                                     </div>
                                     <div>
                                         <h3>Email</h3>
-                                        <p>contactmysoft@mysft.site</p>
+                                        <p>contact.mysoft@mysft.site</p>
                                     </div>
                                 </div>
                                 <div class="contact-item">
@@ -231,8 +232,9 @@
                                 </div>
                             </div>
     
-                            
-                          
+                            <div class="contact-image">
+                                <img src="../img/contact.png" alt=" contact">
+                            </div>
                         </div>
     
                         <!-- Contact Form -->
@@ -255,12 +257,12 @@
                                 <div class="form-group">
                                     <label for="name">Nom complet</label>
                                     <input type="hidden" name="access_key" value="e2d4ab16-3f66-4780-84d2-702f77752e36">
-                                    <input type="text" id="name" name="name" required placeholder="Jean Kasongo">
+                                    <input type="text" id="name" name="name" required placeholder="Jean Dupont">
                                 </div>
                                 <div class="form-group">
                                     <label for="email">Email</label>
                                     <input type="email" id="email" name="email" required
-                                        placeholder="jean.Kasongo@exemple.com">
+                                        placeholder="jean.dupont@exemple.com">
                                 </div>
                                 <div class="form-group">
                                     <label for="company">Entreprise</label>
@@ -289,7 +291,7 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2026 MYSOFT. Tous droits réservés.</p>
+            <p>&copy; 2026 Mysoft. Tous droits réservés.</p>
         </div>
     </footer>
 
