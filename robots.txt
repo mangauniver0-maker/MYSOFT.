@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://mysft.site/sitemap.xml
