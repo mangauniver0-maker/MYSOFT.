@@ -46,62 +46,62 @@
 
         <section id="reservation" aria-labelledby="reservation-title">
             <h2 id="reservation-title">Formulaire de réservation</h2>
-            <form class="reservation-form" action="https://formsubmit.co/mangauniver0@gmail.com" method="POST>
-                <fieldset>
-                    <legend>Informations personnelles</legend>
-                    <label for="nom">Nom complet</label>
-                    <input id="nom" name="nom" type="text" placeholder="Votre nom complet">
+           <form class="reservation-form" action="https://formsubmit.co/mangauniver0@gmail.com" method="POST">
+    <!-- Configuration FormSubmit pour un rendu plus pro -->
+    <input type="hidden" name="_next" value="https://votre-site.com">
+    <input type="hidden" name="_subject" value="Nouvelle réservation - Soft-Academia 2026">
+    <input type="text" name="_honey" style="display:none"> <!-- Anti-spam Honeypot -->
 
-                    <label for="email">Email</label>
-                    <input id="email" name="email" type="email" placeholder="votre@email.com">
+    <fieldset>
+        <legend>Informations personnelles</legend>
+        
+        <label for="nom">Nom complet <span class="required">*</span></label>
+        <input id="nom" name="nom" type="text" placeholder="Ex: Jean Mukendi" required>
 
-                    <label for="telephone">Téléphone</label>
-                    <input id="telephone" name="telephone" type="tel" placeholder="Votre numéro">
+        <label for="email">Adresse email <span class="required">*</span></label>
+        <input id="email" name="email" type="email" placeholder="exemple@domaine.com" required>
 
-                    <label for="adresse">Adresse</label>
-                    <textarea id="adresse" name="adresse" placeholder="Votre adresse"></textarea>
-                </fieldset>
+        <label for="telephone">Téléphone <span class="required">*</span></label>
+        <input id="telephone" name="telephone" type="tel" placeholder="+243..." required>
+    </fieldset>
 
-                <fieldset>
-                    <legend>Choix de la formation</legend>
-                    <label for="formation">Formation</label>
-                    <select id="formation" name="formation">
-                        <option>Développement Web</option>
-                        <option>Python</option>
-                        <option>JavaScript</option>
-                        <option>UI/UX Design</option>
-                    </select>
+    <fieldset>
+        <legend>Profil d'apprentissage</legend>
+        
+        <label for="formation">Statut actuel <span class="required">*</span></label>
+        <select id="formation" name="formation" required>
+            <option value="" disabled selected>Choisissez votre statut</option>
+            <option value="etudiant">Étudiant</option>
+            <option value="eleve">Élève</option>
+            <option value="autre">Autre</option>
+        </select>
 
-                    <label for="session">Session</label>
-                    <select id="session" name="session">
-                        
-                        <option>Présentiel</option>
-                        <option>En ligne</option>
-                    </select>
+        <label for="session">Mode de session <span class="required">*</span></label>
+        <select id="session" name="session" required>
+            <option value="" disabled selected>Choisissez le mode</option>
+            <option value="presentiel">Présentiel</option>
+            <option value="en_ligne">En ligne</option>
+        </select>
+    </fieldset>
 
-                    
-                </fieldset>
+    <fieldset>
+        <legend>Options de paiement</legend>
+        
+        <label for="paiement">Mode de paiement <span class="required">*</span></label>
+        <select id="paiement" name="paiement" required>
+            <option value="" disabled selected>Sélectionnez un mode</option>
+            <option value="physique">Paiement physique (Guichet)</option>
+            <option value="mobile_money">Mobile Money (Airtel, Orange, M-Pesa)</option>
+        </select>
+    </fieldset>
 
-                <fieldset>
-                    <legend>Paiement</legend>
-                    <label for="paiement">Mode de paiement</label>
-                    <select id="paiement" name="paiement">
-                        <option>Physique</option>
-                        <option>Mobile Money</option>
-                        
-                    </select>
+    <fieldset class="checkbox-group">
+        <input id="conditions" name="conditions" type="checkbox" required>
+        <label for="conditions">J'accepte les conditions générales d'utilisation. <span class="required">*</span></label>
+    </fieldset>
 
-                </fieldset>
-
-                <fieldset>
-                    <legend>Conditions</legend>
-                    <input id="conditions" name="conditions" type="checkbox">
-                    <label for="conditions">J'accepte les conditions générales.</label>
-                </fieldset>
-
-                <button type="submit">Réserver maintenant</button>
-            </form>
-        </section>
+    <button type="submit">Confirmer ma réservation</button>
+</form
 
        
 
