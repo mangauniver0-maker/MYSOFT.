@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="reservation.css">
+    <title>Mysoft Academia - Réservation</title>
+</head>
+<body>
+    <header>
+        <nav id="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <a href="index (3).html">Mysoft</a>
+                </div>
+                <div class="nav-menu">
+                    <a href="index (3).html#contact" class="nav-link">Contact</a>
+                    <a href="Mysoft_Academia.html#reservation" class="nav-link">Réservation</a>
+                </div>
+            </div>
+        </nav>
+         
+
+        <div class="page-intro">
+            <h1>Mysoft Academia</h1>
+            <p>Réservez votre place pour nos formations et gérez votre inscription en toute simplicité.</p>
+        </div>
+    </header>
+
+    <main>
+        <section id="formation" aria-labelledby="formation-title">
+            <h2 id="formation-title">Formation sélectionnée</h2>
+            <article class="formation-card">
+                <h3>Développement Web Complet</h3>
+                <p>Une formation pratique et orientée projets pour apprendre à créer des sites et applications modernes.</p>
+                <ul>
+                    <li>Durée : 4 semaines</li>
+                    <li>Prix : 50 USD</li>
+                    <li>Date de début : 03 août 2026</li>
+                    <li>Places restantes : 13</li>
+                    <li>Formateur : l'equipe Mysoft</li>
+                </ul>
+            </article>
+        </section>
+
+        <section id="reservation" aria-labelledby="reservation-title">
+            <h2 id="reservation-title">Formulaire de réservation</h2>
+            <form class="reservation-form">
+                <fieldset>
+                    <legend>Informations personnelles</legend>
+                    <label for="nom">Nom complet</label>
+                    <input id="nom" name="nom" type="text" placeholder="Votre nom complet">
+
+                    <label for="email">Email</label>
+                    <input id="email" name="email" type="email" placeholder="votre@email.com">
+
+                    <label for="telephone">Téléphone</label>
+                    <input id="telephone" name="telephone" type="tel" placeholder="Votre numéro">
+
+                    <label for="adresse">Adresse</label>
+                    <textarea id="adresse" name="adresse" placeholder="Votre adresse"></textarea>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Choix de la formation</legend>
+                    <label for="formation">Formation</label>
+                    <select id="formation" name="formation">
+                        <option>Développement Web</option>
+                        <option>Python</option>
+                        <option>JavaScript</option>
+                        <option>UI/UX Design</option>
+                    </select>
+
+                    <label for="session">Session</label>
+                    <select id="session" name="session">
+                        
+                        <option>Présentiel</option>
+                        <option>En ligne</option>
+                    </select>
+
+                    
+                </fieldset>
+
+                <fieldset>
+                    <legend>Paiement</legend>
+                    <label for="paiement">Mode de paiement</label>
+                    <select id="paiement" name="paiement">
+                        <option>Physique</option>
+                        <option>Mobile Money</option>
+                        
+                    </select>
+
+                </fieldset>
+
+                <fieldset>
+                    <legend>Conditions</legend>
+                    <input id="conditions" name="conditions" type="checkbox">
+                    <label for="conditions">J'accepte les conditions générales.</label>
+                </fieldset>
+
+                <button type="submit">Réserver maintenant</button>
+            </form>
+        </section>
+
+        <section id="recapitulatif" aria-labelledby="recapitulatif-title">
+            <h2 id="recapitulatif-title">Récapitulatif de la réservation</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Élément</th>
+                        <th>Valeur</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Formation</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Prix</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Date</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Mode de paiement</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+       
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-links">
+            <a href="https://mysft.site" target="_blank" rel="noopener noreferrer">Notre site</a>
+            <a href="https://www.instagram.com/mysoftstartup?igsh=b2gzcmU5cm5nMGpn target="_blank" rel="noopener noreferrer">Instagram</a>
+            <a href="https://whatsapp.com/channel/0029VbD4Xp5Bqbr5gcWJtO2D" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+        </div>
+
+        <div class="footer-conditions">
+            <p>En réservant, vous acceptez nos conditions générales de formation, de paiement et de confidentialité.</p>
+            <p>Les réservations sont soumises à validation par Mysoft Academia.</p>
+        </div>
+
+        <p>© 2026 Mysoft Academia</p>
+    </footer>
+    script src="script.js"></script>
+</body>
+</html>

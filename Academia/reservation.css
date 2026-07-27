@@ -1,0 +1,245 @@
+:root {
+    --color-primary: #0f084b;
+    --color-secondary: #26408b;
+    --color-surface: #a6cfd5;
+    --color-border: #0d0221;
+    --light: #c2e7d9;
+    --bg-soft: #f4f8fb;
+    --text-muted: #5d6884;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #f7fbfd 0%, #eef8fa 100%);
+    color: var(--color-border);
+    line-height: 1.6;
+}
+
+header {
+    padding: 120px 24px 48px;
+    text-align: center;
+    background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+    color: white;
+}
+
+header h1 {
+    font-size: 2.6rem;
+    margin-bottom: 12px;
+    font-weight: 700;
+}
+
+header p {
+    font-size: 1.05rem;
+    opacity: 0.95;
+}
+
+main {
+    max-width: 1160px;
+    margin: 0 auto;
+    padding: 48px 24px 80px;
+}
+
+section {
+    background: rgba(255, 255, 255, 0.9);
+    border: 1px solid rgba(13, 2, 33, 0.08);
+    border-radius: 20px;
+    box-shadow: 0 16px 40px rgba(15, 8, 75, 0.08);
+    padding: 32px;
+    margin-bottom: 28px;
+}
+
+section h2 {
+    color: var(--color-primary);
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+}
+
+.formation-card {
+    border-left: 6px solid var(--color-secondary);
+    background: linear-gradient(135deg, #f0f8fa 0%, #ffffff 100%);
+    border-radius: 16px;
+    padding: 24px;
+}
+
+.formation-card h3 {
+    color: var(--color-primary);
+    margin-bottom: 12px;
+    font-size: 1.35rem;
+}
+
+.formation-card ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 12px;
+    list-style: none;
+    margin-top: 16px;
+    padding: 0;
+}
+
+.formation-card li {
+    padding: 10px 12px;
+    border-radius: 10px;
+    background: rgba(166, 207, 213, 0.28);
+    color: var(--color-primary);
+    font-weight: 600;
+}
+
+form {
+    display: grid;
+    gap: 18px;
+}
+
+fieldset {
+    border: 1px solid rgba(13, 2, 33, 0.1);
+    border-radius: 16px;
+    padding: 20px;
+    background: #fcfefe;
+}
+
+legend {
+    padding: 0 8px;
+    color: var(--color-secondary);
+    font-weight: 700;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: var(--color-primary);
+    font-weight: 600;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 12px 14px;
+    border: 1px solid rgba(13, 2, 33, 0.12);
+    border-radius: 12px;
+    margin-bottom: 14px;
+    font-size: 1rem;
+    background: white;
+    transition: all 0.2s ease;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: var(--color-secondary);
+    box-shadow: 0 0 0 4px rgba(38, 64, 139, 0.15);
+}
+
+textarea {
+    min-height: 110px;
+    resize: vertical;
+}
+
+button[type="submit"] {
+    align-self: flex-start;
+    padding: 13px 22px;
+    border: none;
+    border-radius: 999px;
+    background: var(--color-primary);
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background: var(--color-secondary);
+    transform: translateY(-2px);
+}
+
+.error-message {
+    color: #b91c1c;
+    font-size: 0.9rem;
+    margin-top: -8px;
+    margin-bottom: 10px;
+}
+
+input.error,
+select.error,
+textarea.error {
+    border-color: #b91c1c;
+    box-shadow: 0 0 0 3px rgba(185, 28, 28, 0.12);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    overflow: hidden;
+    border-radius: 16px;
+}
+
+th,
+td {
+    padding: 14px 16px;
+    border-bottom: 1px solid rgba(13, 2, 33, 0.08);
+    text-align: left;
+}
+
+th {
+    background: var(--color-primary);
+    color: white;
+}
+
+tr:nth-child(even) td {
+    background: #f7fbfc;
+}
+
+footer {
+    text-align: center;
+    padding: 32px 24px 60px;
+    color: var(--text-muted);
+    background: #f3f7f9;
+}
+
+.site-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+.footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+}
+
+.footer-links a {
+    color: var(--color-primary);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.footer-links a:hover {
+    color: var(--color-secondary);
+    text-decoration: underline;
+}
+
+.footer-conditions {
+    max-width: 700px;
+    font-size: 0.95rem;
+    color: var(--text-muted);
+}
+
+@media (max-width: 768px) {
+    header {
+        padding-top: 110px;
+    }
+
+    section {
+        padding: 24px;
+    }
+
+    main {
+        padding-inline: 16px;
+    }
+}
