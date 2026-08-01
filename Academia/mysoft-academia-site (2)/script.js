@@ -152,8 +152,16 @@ document.addEventListener('DOMContentLoaded', () => {
       }
       submitStartTime = now;
       
+      const emailInput = document.getElementById('email');
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
       if (!contactForm.checkValidity()) {
         e.stopPropagation();
+        contactForm.classList.add('was-validated');
+      } else if (emailInput && !emailRegex.test(emailInput.value.trim())) {
+        e.stopPropagation();
+        emailInput.classList.add('is-invalid');
+        emailInput.setCustomValidity('Veuillez entrer une adresse email valide.');
         contactForm.classList.add('was-validated');
       } else {
         if (countryCodeSelect && phoneInput) {
