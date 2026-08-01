@@ -520,16 +520,14 @@
         
         <div class="col-lg-7 fade-element">
           <div class="card border-0 shadow-lg rounded-4 p-4 p-md-5">
-            <h3 class="fw-bold text-primary-custom mb-4">Envoyez-nous un message</h3>
+            <h3 class="fw-bold text-primary-custom mb-4">S'inscrire à la formation</h3>
             <form id="contactForm" action="https://formsubmit.co/ajax/contactmysoft@mysft.site" method="POST" novalidate>
                  <!-- Configuration FormSubmit pour un rendu plus pro -->
                     <input type="hidden" name="_next" value="https://mysft.site">
-                    <input type="hidden" name="_subject" value="Nouvelle réservation - MySoft-Academia 2026">
-                     <input type="text" name="_honey" style="display:none"
-              <input type="hidden" name="_captcha" value="false">
-              <input type="hidden" id="emailSubject" name="subject" value="Nouvelle Demande de Réservation">
-              <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
-              <div class="row g-3">
+                    <input type="hidden" name="_subject" value="Nouvelle Inscription - MySoft-Academia 2026">
+             
+                    <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+             <div class="row g-3">
                 <div class="col-md-6">
                   <label for="name" class="form-label fw-medium">Nom complet</label>
                   <input type="text" class="form-control form-control-lg bg-light" id="name" name="name" required>
@@ -542,7 +540,7 @@
                 </div>
                 <div class="col-12">
                   <label for="email" class="form-label fw-medium">Email</label>
-                  <input type="email" class="form-control form-control-lg bg-light" id="email" name="email"  placeholder="exemple@mail.com" required>
+                  <input type="email" class="form-control form-control-lg bg-light" id="email" name="email" inputmode="email" autocomplete="email" placeholder="exemple@mail.com" required>
                   <div class="invalid-feedback">Veuillez entrer une adresse email valide.</div>
                 </div>
                 <div class="col-12">
