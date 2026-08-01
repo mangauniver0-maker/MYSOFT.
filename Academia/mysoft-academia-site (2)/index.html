@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net https://fonts.googleapis.com; font-src 'self' https://cdn.jsdelivr.net https://fonts.gstatic.com data:; img-src 'self' data: https: blob:; frame-src https://www.google.com https://www.google.com/maps; connect-src 'self' https://formsubmit.co; object-src 'none'; base-uri 'self'; form-action 'self' https://formsubmit.co; upgrade-insecure-requests">
+  <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
+  <meta http-equiv="X-Content-Type-Options" content="nosniff">
+  <meta http-equiv="Permissions-Policy" content="geolocation=(), microphone=(), camera=()">
+  <title>Formation Développement Web, Python &amp; JavaScript à Kinshasa | Mysoft Academia</title>
+  <meta name="description" content="Mysoft Academia forme les futurs développeurs à Kinshasa avec des cours pratiques en développement web, Python, JavaScript, Bootstrap, Git et GitHub.">
+  <meta name="keywords" content="formation informatique kinshasa, développement web, python, javascript, bootstrap, git github, Mysoft Academia">
+  <meta name="author" content="Mysoft Academia">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://mysft.site/">
+  <meta property="og:title" content="Formation Développement Web, Python &amp; JavaScript à Kinshasa | Mysoft Academia">
+  <meta property="og:description" content="Mysoft Academia forme les futurs développeurs à Kinshasa avec des cours pratiques en développement web, Python, JavaScript, Bootstrap, Git et GitHub.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://mysft.site/">
+  <meta property="og:image" content="https://mysft.site/img/IMG_2325.PNG">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Formation Développement Web, Python &amp; JavaScript à Kinshasa | Mysoft Academia">
+  <meta name="twitter:description" content="Mysoft Academia forme les futurs développeurs à Kinshasa avec des cours pratiques en développement web, Python, JavaScript, Bootstrap, Git et GitHub.">
+  <meta name="twitter:image" content="https://mysft.site/img/IMG_2325.PNG">
+  <link rel="icon" type="image/png" href="img/IMG_2325.PNG">
+  
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <!-- Google Fonts: Poppins -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="./style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "EducationalOrganization",
+    "name": "Mysoft Academia",
+    "url": "https://mysft.site/",
+    "description": "Centre de formation en développement web, Python, JavaScript et compétences numériques à Kinshasa.",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Kinshasa",
+      "addressCountry": "CD"
+    },
+    "email": "contactmysoft@mysft.site",
+    "telephone": "+243851193495"
+  }
+  </script>
+</head>
+<body>
+
+  <!-- 1. Loader -->
+  <div id="loader" class="loader-overlay">
+    <div class="spinner"></div>
+  </div>
+
+  <!-- 2. Navbar -->
+  <nav class="navbar navbar-expand-lg fixed-top" id="navbar">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center gap-2" href="#hero">
+        <i class="bi bi-code-slash text-accent fs-3"></i>
+        <span class="fw-bold fs-4">Mysoft Academia</span>
+      </a>
+      <button class="navbar-toggler bg-white text-primary" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item"><a class="nav-link" href="#hero">Accueil</a></li>
+          <li class="nav-item"><a class="nav-link" href="#formations">Formations</a></li>
+          <li class="nav-item"><a class="nav-link" href="#pourquoi-nous">Pourquoi Nous</a></li>
+          
+          <li class="nav-item"><a class="nav-link" href="#temoignages">Témoignages</a></li>
+          <li class="nav-item"><a class="nav-link" href="#faq">FAQ</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+        <a href="#contact" class="btn btn-accent rounded-pill px-4 fw-medium shadow-sm hover-lift mt-3 mt-lg-0">S'inscrire</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- 3. Hero Section -->
+  <section id="hero" class="hero-section position-relative vh-100 d-flex align-items-center overflow-hidden">
+    <!-- Background Wrapper -->
+    <div class="position-absolute w-100 h-100 top-0 start-0 z-0">
+      <div class="img-placeholder-wrapper img-placeholder h-100 w-100 rounded-0 hero-placeholder fade-element">
+        <img src="img/IMG_2325.PNG" alt="Centre de formation Mysoft Academia à Kinshasa" class="placeholder-img" onerror="this.style.display='none'">
+        <div class="placeholder-content">
+          <i class="bi bi-image"></i>
+          <span>Image d'arrière-plan Hero (16:9)</span>
+          <small>Remplacez l'attribut src</small>
+        </div>
+      </div>
+      <div class="position-absolute top-0 start-0 w-100 h-100 hero-overlay"></div>
+    </div>
+    
+    <!-- Content -->
+    <div class="container position-relative z-1 text-white">
+      <div class="row">
+        <div class="col-lg-8 fade-element">
+          <h1 class="display-3 fw-bold mb-4">Construisez votre avenir grâce aux compétences numériques.</h1>
+          <p class="lead mb-5 fs-4 text-white-50">Rejoignez Mysoft Academia et apprenez le développement Web, Python, JavaScript, Bootstrap, Git, GitHub et les bonnes pratiques de programmation grâce à une formation entièrement pratique.</p>
+          <div class="d-flex gap-3 flex-wrap">
+            <a href="#formations" class="btn btn-outline-light rounded-pill px-4 py-3 fw-medium hover-lift">Découvrir la formation</a>
+            <a href="#contact" class="btn btn-accent rounded-pill px-4 py-3 fw-medium shadow hover-lift">S'inscrire maintenant</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. Pourquoi Apprendre -->
+  <section id="pourquoi-apprendre" class="py-5 section-bg-light">
+    <div class="container py-5">
+      <div class="row align-items-center gy-5">
+        <div class="col-lg-6 fade-element">
+          <h2 class="display-5 fw-bold text-primary-custom mb-4">Pourquoi apprendre aujourd'hui ?</h2>
+          <p class="fs-5 text-muted mb-4">Dans un monde où la technologie évolue rapidement, les compétences numériques sont devenues indispensables. Chez Mysoft Academia, nous ne formons pas seulement des étudiants, nous préparons les développeurs, les entrepreneurs et les innovateurs de demain.</p>
+          <p class="fs-5 text-muted mb-4">Chaque ligne de code représente une nouvelle opportunité. Chaque projet réalisé est une étape vers votre réussite professionnelle. Notre objectif est de transformer votre curiosité en compétences et vos compétences en opportunités.</p>
+          <ul class="list-unstyled d-flex flex-column gap-3 mt-4">
+            <li class="d-flex align-items-center gap-3"><i class="bi bi-check-circle-fill text-accent fs-4"></i> <span class="fs-5 fw-medium text-main">Compétences très demandées</span></li>
+            <li class="d-flex align-items-center gap-3"><i class="bi bi-check-circle-fill text-accent fs-4"></i> <span class="fs-5 fw-medium text-main">Flexibilité et télétravail</span></li>
+            <li class="d-flex align-items-center gap-3"><i class="bi bi-check-circle-fill text-accent fs-4"></i> <span class="fs-5 fw-medium text-main">Évolution de carrière rapide</span></li>
+          </ul>
+        </div>
+        <div class="col-lg-6 fade-element">
+          <div class="placeholder-float-wrapper">
+            <div class="img-placeholder-wrapper img-placeholder rounded-4 ratio ratio-4x3">
+              <img src="img/" alt="Pourquoi apprendre" class="placeholder-img" onerror="this.style.display='none'">
+              <div class="placeholder-content">
+                <i class="bi bi-image"></i>
+                <span>Image d'illustration</span>
+                <small>Remplacez l'attribut src</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. Pourquoi Choisir Mysoft Academia -->
+  <section id="pourquoi-nous" class="py-5">
+    <div class="container py-5">
+      <div class="text-center mb-5 fade-element">
+        <h2 class="display-5 fw-bold text-primary-custom mb-3">Pourquoi choisir Mysoft Academia</h2>
+        <p class="lead text-muted max-w-700 mx-auto">Découvrez les avantages qui font de notre centre de formation le meilleur choix pour votre carrière.</p>
+      </div>
+      <div class="row g-4">
+        <!-- Card 1 -->
+        <div class="col-lg-3 col-md-6 fade-element">
+          <div class="card h-100 border-0 shadow-sm tilt-card rounded-4 p-3 hover-lift">
+            <div class="card-body text-center">
+              <div class="icon-box bg-primary-light text-primary-custom rounded-circle mx-auto mb-3 d-flex align-items-center justify-content-center" style="width: 60px; height: 60px;">
+                <i class="bi bi-laptop fs-3"></i>
+              </div>
+               
+              
+              <h4 class="card-title fw-bold text-primary-custom h5">Formation pratique</h4>
+              <p class="card-text text-muted small">80% de pratique et 20% de théorie pour une maîtrise totale.</p>
+            </div>
+          </div>
+        </div>
+        <!-- Card 2 -->
+        <div class="col-lg-3 col-md-6 fade-element">
+          <div class="card h-100 border-0 shadow-sm tilt-card rounded-4 p-3 hover-lift">
+            <div class="card-body text-center">
+              <div class="icon-box bg-primary-light text-primary-custom rounded-circle mx-auto mb-3 d-flex align-items-center justify-content-center" style="width: 60px; height: 60px;">
+                <i class="bi bi-code-square fs-3"></i>
+              </div>
+              
+              <h4 class="card-title fw-bold text-primary-custom h5">Projets réels</h4>
+              <p class="card-text text-muted small">Travaillez sur des projets concrets demandés par des entreprises.</p>
+            </div>
+          </div>
+        </div>
+        <!-- Card 3 -->
+        <div class="col-lg-3 col-md-6 fade-element">
+          <div class="card h-100 border-0 shadow-sm tilt-card rounded-4 p-3 hover-lift">
+            <div class="card-body text-center">
+              <div class="icon-box bg-primary-light text-primary-custom rounded-circle mx-auto mb-3 d-flex align-items-center justify-content-center" style="width: 60px; height: 60px;">
+                <i class="bi bi-person-check fs-3"></i>
+              </div>
+             
+              <h4 class="card-title fw-bold text-primary-custom h5">Encadrement personnalisé</h4>
+              <p class="card-text text-muted small">Des mentors dédiés pour vous guider à chaque étape.</p>
+            </div>
+          </div>
+        </div>
+        <!-- Card 4 -->
+        <div class="col-lg-3 col-md-6 fade-element">
+          <div class="card h-100 border-0 shadow-sm tilt-card rounded-4 p-3 hover-lift">
+            <div class="card-body text-center">
+              <div class="icon-box bg-primary-light text-primary-custom rounded-circle mx-auto mb-3 d-flex align-items-center justify-content-center" style="width: 60px; height: 60px;">
+                <i class="bi bi-award fs-3"></i>
+              </div>
+              
+              <h4 class="card-title fw-bold text-primary-custom h5">Formateurs </h4>
+              <p class="card-text text-muted small">Apprenez avec des passionnés  de l'industrie.</p>
+            </div>
+          </div>
+        </div>
+        <!-- Card 5 -->
+        
+        <!-- Card 6 -->
+        
+        <!-- Card 7 -->
+        
+        <!-- Card 8 -->
+        <div class="col-lg-3 col-md-6 fade-element">
+          <div class="card h-100 border-0 shadow-sm tilt-card rounded-4 p-3 hover-lift">
+            <div class="card-body text-center">
+              <div class="icon-box bg-primary-light text-primary-custom rounded-circle mx-auto mb-3 d-flex align-items-center justify-content-center" style="width: 60px; height: 60px;">
+                <i class="bi bi-people fs-3"></i>
+              </div>
+              
+              
+              <h4 class="card-title fw-bold text-primary-custom h5">Réseau d'alumnis</h4>
+              <p class="card-text text-muted small">Intégrez une communauté active pour continuer à grandir avec nous.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. Formation en vedette -->
+  <section id="formations" class="py-5 section-bg-light">
+    <div class="container py-5">
+      <div class="text-center mb-5 fade-element">
+        <h2 class="display-5 fw-bold text-primary-custom mb-3">Nos Formations</h2>
+        <p class="lead text-muted max-w-700 mx-auto">Des cursus intensifs pour vous propulser dans le monde du numérique.</p>
+      </div>
+      
+      <div class="card border-0 shadow-lg rounded-4 overflow-hidden fade-element feature-course-card mx-auto max-w-700" style="max-width: 1000px;">
+        <div class="row g-0">
+          <div class="col-md-5 image-zoom-card image-frame-enhanced">
+            <div class="img-placeholder-wrapper img-placeholder h-100 min-h-300 w-100 rounded-0">
+              <img src="img/IMG_2256.PNG" alt="Affiche de la formation développement web à Mysoft Academia" class="placeholder-img" onerror="this.style.display='none'">
+              <div class="placeholder-content">
+                <i class="bi bi-image"></i>
+                <span>Votre affiche ici (3:4)</span>
+                <small>Remplacez l'attribut src</small>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-7 p-4 p-lg-5 d-flex flex-column justify-content-center position-relative z-1 course-content">
+            <div class="course-bg-glow"></div>
+            <div class="mb-3">
+              <span class="badge bg-accent text-white rounded-pill px-3 py-2 fw-medium shadow-sm"><i class="bi bi-star-fill me-1"></i> Formation phare</span>
+            </div>
+            <h3 class="display-6 fw-bold text-primary-custom mb-3">Formation Développement Web</h3>
+            <p class="text-muted mb-4 fs-5">Devenez développeur Full-Stack avec les technologies les plus demandées sur le marché du travail.</p>
+            
+            <h5 class="fw-bold mb-3">Modules inclus :</h5>
+            <div class="d-flex flex-wrap gap-2 mb-4">
+              <span class="badge bg-light text-dark border px-3 py-2">HTML5</span>
+              <span class="badge bg-light text-dark border px-3 py-2">CSS3</span>
+              <span class="badge bg-light text-dark border px-3 py-2">JavaScript</span>
+              <span class="badge bg-light text-dark border px-3 py-2">Bootstrap 5</span>
+              <span class="badge bg-light text-dark border px-3 py-2">Python</span>
+              <span class="badge bg-light text-dark border px-3 py-2">Flask</span>
+              <span class="badge bg-light text-dark border px-3 py-2">Git & GitHub</span>
+              <span class="badge bg-accent text-white border-accent px-3 py-2">Projet Final</span>
+            </div>
+            
+            <div class="row g-3 mb-4">
+              <div class="col-sm-6">
+                <div class="d-flex align-items-center gap-2">
+                  <div class="bg-primary-light text-primary-custom rounded-circle p-2 d-flex"><i class="bi bi-clock"></i></div>
+                  <span class="fw-medium text-main">Durée: 4 semaines</span>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="d-flex align-items-center gap-2">
+                  <div class="bg-primary-light text-primary-custom rounded-circle p-2 d-flex"><i class="bi bi-tag"></i></div>
+                  <span class="fw-medium text-main">Prix: 50$</span>
+                </div>
+              </div>
+              
+              <div class="col-sm-6">
+                <div class="d-flex align-items-center gap-2">
+                  <div class="bg-primary-light text-danger rounded-circle p-2 d-flex"><i class="bi bi-person-exclamation text-danger"></i></div>
+                  <span class="fw-bold text-danger">Places limitées</span>
+                </div>
+              </div>
+            </div>
+            
+            <div class="mt-auto">
+              <a href="#contact" class="btn btn-primary-custom btn-lg rounded-pill px-5 hover-lift shadow w-100">Je réserve ma place</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+
+  <!-- 8. Statistiques -->
+  <section class="py-5 bg-primary-custom text-white position-relative overflow-hidden">
+    <div class="position-absolute top-0 start-0 w-100 h-100 opacity-10" style="background-image: radial-gradient(circle at 20% 50%, rgba(255,255,255,0.2) 0%, transparent 50%); pointer-events: none;"></div>
+    <div class="container py-5 position-relative z-1">
+      <div class="row g-4 text-center" id="stats-container">
+        <div class="col-md-3 col-6 fade-element">
+          <i class="bi bi-people-fill display-4 text-accent mb-3"></i>
+          <h3 class="display-4 fw-bold mb-0"><span class="counter" data-target="50">0</span>+</h3>
+          <p class="fs-5 text-white-50 mt-2">Étudiants formés</p>
+        </div>
+        <div class="col-md-3 col-6 fade-element">
+          <i class="bi bi-journal-code display-4 text-accent mb-3"></i>
+          <h3 class="display-4 fw-bold mb-0"><span class="counter" data-target="3">0</span>+</h3>
+          <p class="fs-5 text-white-50 mt-2">Formations</p>
+        </div>
+        <div class="col-md-3 col-6 fade-element">
+          <i class="bi bi-star-fill display-4 text-accent mb-3"></i>
+          <h3 class="display-4 fw-bold mb-0"><span class="counter" data-target="98">0</span>%</h3>
+          <p class="fs-5 text-white-50 mt-2">Satisfaction</p>
+        </div>
+        <div class="col-md-3 col-6 fade-element">
+          <i class="bi bi-person-video3 display-4 text-accent mb-3"></i>
+          <h3 class="display-4 fw-bold mb-0"><span class="counter" data-target="8">0</span></h3>
+          <p class="fs-5 text-white-50 mt-2">Formateurs experts</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 9. Témoignages -->
+  <section id="temoignages" class="py-5 section-bg-light">
+    <div class="container py-5">
+      <div class="text-center mb-5 fade-element">
+        <h2 class="display-5 fw-bold text-primary-custom mb-3">Ce qu'ils disent de nous</h2>
+      </div>
+      <div class="row justify-content-center fade-element">
+        <div class="col-lg-8">
+          <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner pb-5">
+              <!-- Testimonial 1 -->
+              <div class="carousel-item active text-center">
+                <div class="card border-0 shadow-sm rounded-4 p-4 p-md-5 mx-3 mb-4">
+                  <div class="img-placeholder-wrapper img-placeholder rounded-circle mx-auto mb-4 border-0" style="width: 80px; height: 80px; flex-shrink: 0;">
+                    
+                    <div class="placeholder-content">
+                      <i class="bi bi-person-fill fs-3 m-0"></i>
+                    </div>
+                  </div>
+                  <div class="text-warning mb-3">
+                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                  </div>
+                  <p class="lead fst-italic text-muted mb-4">"La formation en développement web a été une révélation. L'approche pratique m'a permis de construire un vrai portfolio avant même de terminer. Je recommande vivement !"</p>
+                  <h5 class="fw-bold text-primary-custom mb-0">Julio Masiala</h5>
+                  <span class="text-muted small">Développeur Front-end</span>
+                </div>
+              </div>
+              <!-- Testimonial 2 -->
+              <div class="carousel-item text-center">
+                <div class="card border-0 shadow-sm rounded-4 p-4 p-md-5 mx-3 mb-4">
+                  <div class="img-placeholder-wrapper img-placeholder rounded-circle mx-auto mb-4 border-0" style="width: 80px; height: 80px; flex-shrink: 0;">
+                    
+                    <div class="placeholder-content">
+                      <i class="bi bi-person-fill fs-3 m-0"></i>
+                    </div>
+                  </div>
+                  <div class="text-warning mb-3">
+                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                  </div>
+                  <p class="lead fst-italic text-muted mb-4">"J'avais peur de me lancer car je n'avais aucune base. Les formateurs de Mysoft Academia ont su m'accompagner pas à pas. Aujourd'hui, je crée des applications complètes."</p>
+                  <h5 class="fw-bold text-primary-custom mb-0">Merdi Mbazi</h5>
+                  <span class="text-muted small">Étudiant en Sciences Informatiques</span>
+                </div>
+              </div>
+              <!-- Testimonial 3 -->
+              <div class="carousel-item text-center">
+                <div class="card border-0 shadow-sm rounded-4 p-4 p-md-5 mx-3 mb-4">
+                  <div class="img-placeholder-wrapper img-placeholder rounded-circle mx-auto mb-4 border-0" style="width: 80px; height: 80px; flex-shrink: 0;">
+                   
+                    <div class="placeholder-content">
+                      <i class="bi bi-person-fill fs-3 m-0"></i>
+                    </div>
+                  </div>
+                  <div class="text-warning mb-3">
+                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                  </div>
+                  <p class="lead fst-italic text-muted mb-4">"Une école qui ne se contente pas de donner des cours, mais qui forme de vrais professionnels. Le projet final m'a permis de valider mon année."</p>
+                  <h5 class="fw-bold text-primary-custom mb-0">Winner Parker</h5>
+                  <span class="text-muted small">Développeur Junior</span>
+                </div>
+              </div>
+            </div>
+            <div class="d-flex justify-content-center gap-3">
+              <button class="btn btn-outline-primary rounded-circle" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev" style="width: 45px; height: 45px;">
+                <i class="bi bi-arrow-left"></i>
+                <span class="visually-hidden">Précédent</span>
+              </button>
+              <button class="btn btn-outline-primary rounded-circle" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next" style="width: 45px; height: 45px;">
+                <i class="bi bi-arrow-right"></i>
+                <span class="visually-hidden">Suivant</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 10. FAQ -->
+  <section id="faq" class="py-5">
+    <div class="container py-5">
+      <div class="text-center mb-5 fade-element">
+        <h2 class="display-5 fw-bold text-primary-custom mb-3">Questions Fréquentes</h2>
+      </div>
+      <div class="row justify-content-center fade-element">
+        <div class="col-lg-8">
+          <div class="accordion custom-accordion" id="faqAccordion">
+            <!-- Item 1 -->
+            <div class="accordion-item border-0 mb-3 shadow-sm rounded-4 overflow-hidden">
+              <h2 class="accordion-header">
+                <button class="accordion-button fw-bold fs-5 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                  Faut-il avoir des bases en informatique ?
+                </button>
+              </h2>
+              <div id="faq1" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                <div class="accordion-body text-muted">
+                  Non, nos formations sont conçues pour accueillir des débutants absolus. Nous commençons par les fondamentaux avant de progresser vers des concepts plus avancés.
+                </div>
+              </div>
+            </div>
+            <!-- Item 2 -->
+            <div class="accordion-item border-0 mb-3 shadow-sm rounded-4 overflow-hidden">
+              <h2 class="accordion-header">
+                <button class="accordion-button fw-bold fs-5 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                  Quel matériel dois-je apporter ?
+                </button>
+              </h2>
+              <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                <div class="accordion-body text-muted">
+                  Il est recommandé d'avoir votre propre ordinateur portable (Windows, Mac ou Linux).
+                </div>
+              </div>
+            </div>
+            
+            
+            
+            
+            
+            <div class="accordion-item border-0 mb-3 shadow-sm rounded-4 overflow-hidden">
+              <h2 class="accordion-header">
+                <button class="accordion-button fw-bold fs-5 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq6">
+                  Quels sont les modes de paiement acceptés ?
+                </button>
+              </h2>
+              <div id="faq6" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                <div class="accordion-body text-muted">
+                  Nous acceptons les paiements par mobile money et espèces. Il est également possible de payer en plusieurs tranches selon la durée de la formation.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 11. Contact -->
+  <section id="contact" class="py-5 section-bg-light">
+    <div class="container py-5">
+      <div class="row g-5">
+        <div class="col-lg-5 fade-element">
+          <h2 class="display-5 fw-bold text-primary-custom mb-4">Contactez-nous</h2>
+          <p class="text-muted mb-5 fs-5">Prêt à commencer votre carrière dans le numérique ? Laissez-nous un message et nous vous répondrons rapidement.</p>
+          
+          <div class="d-flex align-items-center mb-4">
+            <div class="icon-box bg-accent text-white rounded-circle d-flex align-items-center justify-content-center me-3 shadow-sm" style="width: 50px; height: 50px; flex-shrink: 0;">
+              <i class="bi bi-geo-alt-fill fs-5"></i>
+            </div>
+            <div>
+              <h5 class="fw-bold mb-1">Notre Adresse</h5>
+              <p class="text-muted mb-0">Kinshasa, Centre-Ville</p>
+            </div>
+          </div>
+          
+          <div class="d-flex align-items-center mb-4">
+            <div class="icon-box bg-accent text-white rounded-circle d-flex align-items-center justify-content-center me-3 shadow-sm" style="width: 50px; height: 50px; flex-shrink: 0;">
+              <i class="bi bi-telephone-fill fs-5"></i>
+            </div>
+            <div>
+              <h5 class="fw-bold mb-1">Téléphone</h5>
+              <p class="text-muted mb-0">+243 851 193 495</p>
+            </div>
+          </div>
+          
+          <div class="d-flex align-items-center mb-4">
+            <div class="icon-box bg-accent text-white rounded-circle d-flex align-items-center justify-content-center me-3 shadow-sm" style="width: 50px; height: 50px; flex-shrink: 0;">
+              <i class="bi bi-envelope-fill fs-5"></i>
+            </div>
+            <div>
+              <h5 class="fw-bold mb-1">Email</h5>
+              <p class="text-muted mb-0">contactmysoft@mysft.site</p>
+            </div>
+          </div>
+          
+          <div class="mt-5 rounded-4 overflow-hidden shadow-sm">
+            <iframe
+              src="https://www.google.com/maps?q=Kinshasa,DR%20Congo&z=12&output=embed"
+              width="100%"
+              height="250"
+              style="border:0;"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              title="Carte de Kinshasa">
+            </iframe>
+          </div>
+        </div>
+        
+        <div class="col-lg-7 fade-element">
+          <div class="card border-0 shadow-lg rounded-4 p-4 p-md-5">
+            <h3 class="fw-bold text-primary-custom mb-4">Envoyez-nous un message</h3>
+            <form id="contactForm" action="https://formsubmit.co/ajax/contactmysoft@mysft.site" method="POST" novalidate>
+              <input type="hidden" name="_captcha" value="false">
+              <input type="hidden" id="emailSubject" name="subject" value="Nouvelle Demande de Réservation">
+              <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <label for="name" class="form-label fw-medium">Nom complet</label>
+                  <input type="text" class="form-control form-control-lg bg-light" id="name" name="name" required>
+                  <div class="invalid-feedback">Veuillez entrer votre nom.</div>
+                </div>
+                <div class="col-md-6">
+                  <label for="phone" class="form-label fw-medium">Téléphone</label>
+                  <input type="tel" class="form-control form-control-lg bg-light" id="phone" name="phone" pattern="\+243[0-9]{9}" placeholder="+243XXXXXXXXX" required>
+                  <div class="invalid-feedback">Veuillez entrer un numéro au format +243XXXXXXXXX.</div>
+                </div>
+                <div class="col-12">
+                  <label for="email" class="form-label fw-medium">Email</label>
+                  <input type="email" class="form-control form-control-lg bg-light" id="email" name="email" pattern=".+@.+\\..+" placeholder="exemple@mail.com" required>
+                  <div class="invalid-feedback">Veuillez entrer une adresse email valide.</div>
+                </div>
+                <div class="col-12">
+                  <label for="formation" class="form-label fw-medium">Formation souhaitée</label>
+                  <select class="form-select form-select-lg bg-light" id="formation" name="formation" required>
+                    <option value="" selected disabled>Choisissez une formation...</option>
+                    <option value="web">Développement Web</option>
+                    <option value="other">Autre</option>
+                  </select>
+                  <div class="invalid-feedback">Veuillez sélectionner une formation.</div>
+                </div>
+                <div class="col-12">
+                  <label for="message" class="form-label fw-medium">Message</label>
+                  <textarea class="form-control form-control-lg bg-light" id="message" name="message" rows="4" maxlength="300" required></textarea>
+                  <div class="invalid-feedback">Veuillez écrire votre message.</div>
+                  <small class="form-text text-muted">Maximum 300 caractères.</small>
+                </div>
+                <div class="col-12 mt-4">
+                  <button type="submit" class="btn btn-primary-custom btn-lg w-100 rounded-pill shadow hover-lift">Envoyer le message</button>
+                </div>
+              </div>
+              <div id="formSuccessMessage" class="alert alert-success mt-4 d-none">
+                <i class="bi bi-check-circle-fill me-2"></i> Votre message a été envoyé avec succès ! Nous vous contacterons bientôt.
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 12. Footer -->
+  <footer class="bg-primary-custom text-white pt-5 pb-3">
+    <div class="container pt-4">
+      <div class="row g-4 mb-5">
+        <div class="col-lg-4 col-md-6">
+          <a class="navbar-brand d-flex align-items-center gap-2 mb-4 text-white text-decoration-none" href="#">
+            <i class="bi bi-code-slash text-accent fs-3"></i>
+            <span class="fw-bold fs-4">Mysoft Academia</span>
+          </a>
+          <p class="text-white-50 mb-4 pe-lg-4">Le centre d'excellence pour la formation aux métiers du numérique en Afrique. Nous formons les leaders technologiques de demain.</p>
+          <div class="d-flex gap-2">
+            <a href="https://whatsapp.com/channel/0029VbD4Xp5Bqbr5gcWJtO2D" target="_blank" rel="noopener noreferrer" class="btn btn-outline-light rounded-circle btn-sm d-flex align-items-center justify-content-center" style="width: 38px; height: 38px;"><i class="bi bi-whatsapp"></i></a>
+            <a href="https://www.instagram.com/mysoftstartup?igsh=b2gzcmU5cm5nMGpn" target="_blank" rel="noopener noreferrer" class="btn btn-outline-light rounded-circle btn-sm d-flex align-items-center justify-content-center" style="width: 38px; height: 38px;"><i class="bi bi-instagram"></i></a>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-6">
+          <h5 class="fw-bold mb-4">Liens rapides</h5>
+          <ul class="list-unstyled d-flex flex-column gap-3">
+            <li><a href="#hero" class="text-white-50 text-decoration-none">Accueil</a></li>
+            <li><a href="#formations" class="text-white-50 text-decoration-none">Formations</a></li>
+            <li><a href="#pourquoi-nous" class="text-white-50 text-decoration-none">Pourquoi Nous</a></li>
+            
+          </ul>
+        </div>
+        <div class="col-lg-2 col-md-6">
+          <h5 class="fw-bold mb-4">Support</h5>
+          <ul class="list-unstyled d-flex flex-column gap-3">
+            <li><a href="#faq" class="text-white-50 text-decoration-none">FAQ</a></li>
+            <li><a href="#contact" class="text-white-50 text-decoration-none">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <h5 class="fw-bold mb-4">Nous contacter</h5>
+          <p class="text-white-50 mb-3">Email : contactmysoft@mysft.site</p>
+          <p class="text-white-50 mb-0">Téléphone : +243 851 193 495</p>
+        </div>
+      </div>
+      <hr class="border-secondary opacity-25 mb-4">
+      <div class="text-center text-white-50 small">
+        <p class="mb-0">&copy; <span id="current-year">2024</span> Mysoft Academia. Tous droits réservés.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- 13. Boutons flottants -->
+  <a href="#contact" id="floating-btn" class="floating-cta text-decoration-none">
+    🚀 S'inscrire maintenant
+  </a>
+  <button id="back-to-top" class="back-to-top">
+    <i class="bi bi-arrow-up fs-5"></i>
+  </button>
+
+  <!-- Bootstrap 5 JS Bundle (includes Popper.js) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Custom JS -->
+  <script src="./script.js"></script>
+</body>
+</html>
